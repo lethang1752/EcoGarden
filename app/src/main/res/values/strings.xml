@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NongSan</string>
+    <string name="gi_250000">Giá: 250000đ</string>
+    <string name="th_m_v_o_gi_h_ng">Thêm vào giỏ hàng</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="string_phone">0917353791</string>
+    <string name="custom_resnote">Góp ý, đóng góp và đánh giá</string>
+    <string name="custom_resnotevalid">Bạn chưa nhập lời nhắn</string>
+    <string name="type_user_note">Nhập lời nhắn ...</string>
+    <string name="sendnote">Gửi</string>
+    <string name="error_network">Không có Internet</string>
+    <string name="mess_send_success">Đã gửi thành công !</string>
+    <string name="mess_send_error">Gửi không thành công !</string>
+    <string name="contact">Liên hệ</string>
+    <string name="info">Thông tin</string>
+    <string name="address">219/97/5 Định Công Thượng, Hoàng Mai, Hà Nội</string>
+    <string name="manager">Quản lý</string>
+    <string name="typeuser">1: Người dùng; 2: QTV; 3: Shipper</string>
+</resources>

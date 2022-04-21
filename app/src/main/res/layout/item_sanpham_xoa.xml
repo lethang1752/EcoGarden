@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/item_xoa_image"
+            android:layout_weight="3"
+            android:src="@drawable/iconnew_w512"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/myriadwebpro"
+                android:id="@+id/item_xoa_ten"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Tên sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/myriadwebpro"
+                    android:id="@+id/item_xoa_gia"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Giá: 250000đ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/myriadwebpro"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="ID: 01"
+                    android:id="@+id/txt_xoa_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/myriadwebpro"
+                android:id="@+id/item_xoa_mota"
+                android:textSize="15sp"
+                android:text="Mô tả: "
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_xoasp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@drawable/ic_delete_forever_24"
+                android:text="Xóa sản phẩm"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "739704465287",
+    "project_id": "ecogarden-d6e13",
+    "storage_bucket": "ecogarden-d6e13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739704465287:android:e9a1c10f470ad1cd615522",
+        "android_client_info": {
+          "package_name": "com.example.nongsan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739704465287-s0vik8vnkt5hisuac3b7ai33jlcjlohb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL8otAmoU8r69XzpBNKw2Zy0U4x_I_F4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739704465287-s0vik8vnkt5hisuac3b7ai33jlcjlohb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SuaChiTietActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar_SuachitietSp"
+        app:title="Sửa chi tiết sản phẩm"
+        app:navigationIcon="@drawable/ic_back_button"
+        app:titleTextColor="@color/white"
+        android:background="#97E070"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/txtidsp"
+                    android:text="ID sản phẩm: 01"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtsuatensp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myriadwebpro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textmanager"
+                        android:layout_marginStart="20dp"
+                        android:text="Tên sản phẩm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:background="@drawable/background_logtext"
+                        android:id="@+id/edtsuatensp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    app:layout_constraintTop_toBottomOf="@id/layout1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtsuagiasp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myriadwebpro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textmanager"
+                        android:layout_marginStart="20dp"
+                        android:text="Giá sản phẩm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:hint="VND"
+                        android:paddingStart="20dp"
+                        android:background="@drawable/background_logtext"
+                        android:id="@+id/edtsuagiasp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    app:layout_constraintTop_toBottomOf="@id/layout2"
+                    android:id="@+id/layout3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myriadwebpro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textmanager"
+                        android:layout_marginStart="20dp"
+                        android:text="Hình ảnh sản phẩm cũ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:id="@+id/img_suagoc"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/img_sua"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_select_img_sua"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="70dp"
+                        android:background="@drawable/custom_button"
+                        android:text="Chọn ảnh mới từ thư viện"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    app:layout_constraintTop_toBottomOf="@id/layout3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:scrollbars="vertical"
+                        android:id="@+id/txtsuamota"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myriadwebpro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textmanager"
+                        android:layout_marginStart="20dp"
+                        android:text="Mô tả sản phẩm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"/>
+                    <EditText
+                        android:background="@drawable/background_logtext"
+                        android:id="@+id/edtsuamotasp"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:scrollbars="vertical"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="20dp" />
+                </LinearLayout>
+                <LinearLayout
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/layout5"
+                    app:layout_constraintTop_toBottomOf="@id/layout4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtsualoai"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myriadwebpro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textmanager"
+                        android:layout_marginStart="20dp"
+                        android:text="Loại sản phẩm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/edtsualoaisp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/background_logtext"
+                        android:hint="1: Lương thực; 2: Hoa quả"
+                        android:paddingStart="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btn_renew"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:text="Cập nhật sản phẩm"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
